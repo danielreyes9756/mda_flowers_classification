@@ -8,11 +8,11 @@ import { PrediccionComponent } from './components/prediccion/prediccion.componen
 
 const routes: Routes = [
   { path:'', pathMatch:'full', redirectTo:'/home'},
-  { path:'/home', component:FormularioComponent},
-  { path:'/predict', component:PrediccionComponent},
-  { path:'/about', component:InformacionComponent},
-  { path:'/flowers', component:FloresComponent},
-  { path:'/agregar', component:AgregarComponent},
+  { path:'home', component:FormularioComponent},
+  { path:'predict', component:PrediccionComponent},
+  { path:'about', component:InformacionComponent},
+  { path:'flowers', component:FloresComponent},
+  { path:'agregar', component:AgregarComponent},
   { path:'**', redirectTo:'/home'}
 ];
 
