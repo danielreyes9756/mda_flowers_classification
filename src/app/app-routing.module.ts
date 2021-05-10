@@ -5,6 +5,7 @@ import { FloresComponent } from './components/flores/flores.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import { PrediccionComponent } from './components/prediccion/prediccion.component';
+import { CamaraComponent } from './components/camara/camara.component';
 
 const routes: Routes = [
   { path:'', pathMatch:'full', redirectTo:'/home'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path:'about', component:InformacionComponent},
   { path:'flowers', component:FloresComponent},
   { path:'agregar', component:AgregarComponent},
+  { path:'camara', component:CamaraComponent},
   { path:'**', redirectTo:'/home'}
 ];
 

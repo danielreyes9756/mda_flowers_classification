@@ -21,7 +21,7 @@ export class PrediccionComponent implements OnInit {
     this.flores = [];
     this.imagen=localStorage.getItem('img');
   }
-
+  
   async ngOnInit() {   
     
     loadModel();
