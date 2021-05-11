@@ -9,10 +9,10 @@
   </div>
   
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 columna">
       <img [src]="imagen" alt="imagen a predecir" id="image" class="imagenPrincipal mt-5" />
     </div>
-    <div class="col-6" *ngIf="show">
+    <div class="col-6 columna" *ngIf="show">
       <h3>Información de la flor</h3>
       <table class="table table-borderless table-hover">
         <tbody>
@@ -39,7 +39,7 @@
         </tbody>
       </table>
     </div>
-    <div class="col-6 mt-3" *ngIf="!show">
+    <div class="col-6 mt-3 columna" *ngIf="!show">
       <h2>Flor no reconocida...</h2>
       <h5>La red no ha reconocido esta imagen como una flor con un nivel de seguridad alto</h5>
       <h6>Posibles motivos</h6>

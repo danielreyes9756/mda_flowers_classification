@@ -23,7 +23,12 @@ export class PrediccionComponent implements OnInit {
   }
   
   async ngOnInit() {   
-    
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });
+    window.onscroll=function(){window.scrollTo(0,0);};
     loadModel();
 
     this.getAllFlowers();
@@ -37,12 +42,11 @@ export class PrediccionComponent implements OnInit {
     document.getElementById("loadingtext").innerHTML = "Listo";
     await this.delay(500);
     document.getElementById("loading").style.display = "none";
-    
     this.prediction = document.getElementById("salida").innerHTML;
     this.prob = document.getElementById("prob").innerHTML;
     (this.prob>0.9) ? this.show=true : this.show=false;
     console.log(this.show)
-    
+    window.onscroll=function(){};
     this.getPrediction();
   }
 
@@ -66,5 +70,4 @@ export class PrediccionComponent implements OnInit {
   delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms));
   }
-
 }

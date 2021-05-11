@@ -52,12 +52,12 @@ export class FormularioComponent implements OnInit {
       image.onload = function () {
         var height = image.height;
         var width = image.width;
-        if (height > width+100){
+        if (height > width+50){
           document.getElementById("imgSalida").classList.add('imgver');
           document.getElementById("imgSalida").classList.remove('imghor');
         }else{
-          document.getElementById("imgSalida").classList.add('imghor');
-          document.getElementById("imgSalida").classList.remove('imgver');
+            document.getElementById("imgSalida").classList.add('imghor');
+            document.getElementById("imgSalida").classList.remove('imgver');
         }
       };
     }
