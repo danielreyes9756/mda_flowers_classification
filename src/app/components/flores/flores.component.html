@@ -1,1 +1,24 @@
-<p>flores works!</p>
+    <!-- <h1>Listado de flores identificables por la red</h1>
+    <div class="flor" *ngFor="let f of flores; let i=index">
+        <div class="left" *ngIf="i%2==0">
+            {{f.Name}}
+        </div>
+        <div class="left" *ngIf="i%2!=0">
+            <img src="{{f.Image}}" alt="flor" class="image img-thumbnail">
+        </div>
+        <div class="right" *ngIf="i%2!=0">
+            {{f.Name}}
+        </div>
+        <div class="right" *ngIf="i%2==0">
+            <img src="{{f.Image}}" alt="flor" class="image img-thumbnail">
+        </div>
+    </div> -->
+
+<h1 class="title">Listado de flores identificables por la red</h1>
+<div class="flores">
+    <div class="flor" *ngFor="let f of flores">
+        <h3>{{f.Name}}</h3>
+        <hr>
+        <img src="{{f.Image}}" alt="">
+    </div>
+</div>
