@@ -6,7 +6,7 @@
   background-size: cover;
   display: block;
   color: white;
-  font-size: calc(5.5vh);;
+  font-size: calc(5.5vh);
 }
 .presentation .texto{
   float:right;
@@ -154,13 +154,17 @@
 }
 
 
-@media only screen and (max-width: 1050px) and (min-width: 820px) {
+@media only screen and (max-width: 1415px) and (min-width: 1060px) {
   .presentation .texto p{
     margin-top: calc(1vh - 6px);
+    font-size: 4.5vh;
+  }
+  .presentation{
+    font-size: 4.5vh;
   }
 }
 
-@media only screen and (max-width: 819px) {
+@media only screen and (max-width: 1060px) {
   .presentation {
     height: calc(130vh - 165px);
     background-image: url("../../img/tulipan.webp");
@@ -211,6 +215,7 @@
   .presentation label[for="pic"] {
     float:inline-end;
     display:block;
+    margin-top: 20px;
     text-align: center;
     color:rgb(31, 42, 56);
     justify-content: center;
@@ -250,8 +255,9 @@
   }
 
   .presentation #imagepreview .imghor{
-    width: 80%;
-    margin-top: 3rem;  
+    height: 100%;
+    width: auto;
+    margin-top: 5vh;  
     border-radius: 25px;
     border-color: black;
     border-width: 10px;
@@ -262,8 +268,9 @@
   }
   
   .presentation #imagepreview .imgver{
-    height: 70%;
-    margin-top: 3rem;  
+    height: 100%;
+    width: auto;
+    margin-top: 5vh;  
     border-radius: 25px;
     border-color: black;
     border-width: 10px;

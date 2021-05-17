@@ -10,6 +10,7 @@ export class FormularioComponent implements OnInit {
   constructor() {}
   
   ngOnInit() {  
+    window.onscroll=function(){};
     this.principal();
   }
 
