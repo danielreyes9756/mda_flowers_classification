@@ -3,7 +3,7 @@
 // open up your console - if everything loaded properly you should see the correct version number
 let classifier,video,resultsP,canvas;
 console.log('ml5 version:', ml5.version);   
-if(window.location.href.includes("camara")){
+
     function setup() {
         if(window.location.href.includes("camara")){
             canvas = createCanvas(300,300)
@@ -28,7 +28,6 @@ if(window.location.href.includes("camara")){
             classifier.classify(gotResult);
         }
     }
-    
     // When we get a result
     function gotResult(err, results) {
         // The results are in an array ordered by confidence.
@@ -37,4 +36,4 @@ if(window.location.href.includes("camara")){
             classifyVideo();
         }
     }
-}
+
