@@ -1,0 +1,13 @@
+td, th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.components {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+p {
+    font-size: larger;
+}
