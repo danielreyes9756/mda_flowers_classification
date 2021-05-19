@@ -30,7 +30,7 @@ nav ul li a:hover{
 	display:none;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
 
   nav {
 		width:100%;

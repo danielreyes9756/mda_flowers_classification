@@ -12,6 +12,9 @@ export class FormularioComponent implements OnInit {
   ngOnInit() {  
     window.onscroll=function(){};
     this.principal();
+    if(screen.width <= 650){
+      $('nav').attr('style','display:none !important');
+    }
   }
 
   public principal() {  

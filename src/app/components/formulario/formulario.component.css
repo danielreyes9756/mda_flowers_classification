@@ -157,7 +157,7 @@
 @media only screen and (max-width: 1415px) and (min-width: 1060px) {
   .presentation .texto p{
     margin-top: calc(1vh - 6px);
-    font-size: 4.5vh;
+    font-size: 5.5vh;
   }
   .presentation{
     font-size: 4.5vh;
@@ -194,6 +194,7 @@
     font-size: calc(4.5vh);
     margin-top:2%;
     background: radial-gradient(circle, rgb(231, 231, 231),  rgb(240, 188, 241))no-repeat center center fixed;
+    width: 100%;
   }
   .presentation #imagepreview{
     float: left;
@@ -279,5 +280,7 @@
     overflow: hidden;
     transition:all 1s;
   }
+
+  
 
 }
