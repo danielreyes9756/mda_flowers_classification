@@ -11,6 +11,10 @@
   <div class="row">
     <div class="col-6 columna">
       <img [src]="imagen" alt="imagen a predecir" id="image" class="imagenPrincipal mt-5" />
+      <div class="text-center mt-4" *ngIf="show">
+        <a href="https://www.amazon.com/s?k={{predictedFlower.Name}}+seeds&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_1" 
+        target="_blank" class="btn btn-dark btn-lg" role="button">Comprar semillas</a>
+      </div>
     </div>
     <div class="col-6 columna" *ngIf="show">
       <h3>Información de la flor</h3>

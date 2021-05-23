@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     var contador = 0;
     function main (){
 
-      $(window).resize(function() {
+      $(screen).resize(function() {
         if(screen.width <= 650){
           contador = 1;
           $('nav').attr('style','display:none !important');
