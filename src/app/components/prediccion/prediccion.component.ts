@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { element } from 'protractor';
 import { Flower, FlowerServiceService } from 'src/app/services/flower-service.service';
 import { FloresComponent } from '../flores/flores.component';
+import * as $ from "jquery";
 declare function loadModel(): any
 @Component({
   selector: 'app-prediccion',
@@ -23,7 +24,14 @@ export class PrediccionComponent implements OnInit {
   }
   
   async ngOnInit() {   
-    
+
+    window.onscroll=function(){window.scrollTo(0,0);};
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });
+
     loadModel();
 
     this.getAllFlowers();
@@ -37,12 +45,11 @@ export class PrediccionComponent implements OnInit {
     document.getElementById("loadingtext").innerHTML = "Listo";
     await this.delay(500);
     document.getElementById("loading").style.display = "none";
-    
     this.prediction = document.getElementById("salida").innerHTML;
     this.prob = document.getElementById("prob").innerHTML;
     (this.prob>0.9) ? this.show=true : this.show=false;
     console.log(this.show)
-    
+    window.onscroll=function(){};
     this.getPrediction();
   }
 
@@ -66,5 +73,4 @@ export class PrediccionComponent implements OnInit {
   delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms));
   }
-
 }
