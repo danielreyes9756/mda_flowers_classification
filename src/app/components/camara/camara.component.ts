@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CameraService } from 'src/app/services/camera.service';
+declare function setup(): any;
 
 @Component({
   selector: 'app-camara',
@@ -6,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./camara.component.css']
 })
 export class CamaraComponent implements OnInit {
-  actCamera = false;
-  constructor() { }
+  
+  constructor(private cameraservice: CameraService) { }
 
   ngOnInit(): void {
-  
+    this.cameraservice.showCamera();
   }
 
 }

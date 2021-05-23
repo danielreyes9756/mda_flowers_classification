@@ -1,33 +1,19 @@
-/* .flor{
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    margin: 1em 2em;
-    padding: 1em 1em;
-}
-
-.image{
-    max-height: 300px;
-}
-
-.left{
-    display: table-cell;
-    float: left;
-    width:50%
-}
-  
-.right{
-    display: table-cell;
-    float: right;
-    width:50%
-} */
-
 .title{
     text-align: center;
     margin-top: .5em;
     padding: 1em;
     background-color: #ff99cc;
     color: black;
+}
+
+.controles{
+    background-color: #ff99cc;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flores{
@@ -45,13 +31,17 @@
     background-color: #ccffcc;
 }
 
+.flor:hover{
+    background-color: #99ff99;
+}
+
 @media (max-width: 950px) {
     .flor{
         width: 31%;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .flor{
         width: 45%;
     }

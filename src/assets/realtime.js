@@ -1,8 +1,8 @@
+const { elementEventFullName } = require("@angular/compiler/src/view_compiler/view_compiler");
 
-// Your code will go here
-// open up your console - if everything loaded properly you should see the correct version number
 let classifier,video,resultsP,canvas;
-console.log('ml5 version:', ml5.version);   
+console.log('ml5 version:', ml5.version); 
+
 if(window.location.href.includes("camara")){
     function setup() {
         if(window.location.href.includes("camara")){
@@ -36,5 +36,9 @@ if(window.location.href.includes("camara")){
             resultsP.html(`${results[0].label  } ${nf(results[0].confidence, 0, 2)}`);
             classifyVideo();
         }
+    }
+
+    function destroy(){
+        
     }
 }
