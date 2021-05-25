@@ -9,6 +9,7 @@ import { Flower, FlowerServiceService } from 'src/app/services/flower-service.se
 export class FloresComponent implements OnInit {
 
   flores: Flower[];
+  order: number = 0;
 
   constructor(private flowerService: FlowerServiceService) { }
 
@@ -25,7 +26,19 @@ export class FloresComponent implements OnInit {
         } as Flower;
       }
       );
+      this.ordenar();
     });
   }
 
+  ordenar(){
+    if(this.order==0){
+      this.flores.sort((a,b) => 
+      a.Name.localeCompare(b.Name));
+      this.order=1;
+    } else {
+      this.flores.sort((a,b) => 
+      b.Name.localeCompare(a.Name));
+      this.order=0;
+    }
+  }
 }
